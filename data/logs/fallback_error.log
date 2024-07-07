@@ -1,0 +1,6 @@
+2024/07/07 12:57:14 [error] 178#178: *1 open() "/var/www/html/api" failed (2: No such file or directory), client: 192.168.65.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/07 12:58:10 [error] 178#178: *8 open() "/var/www/html/api" failed (2: No such file or directory), client: 192.168.65.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/07 14:12:19 [error] 184#184: *2 open() "/var/www/html/api" failed (2: No such file or directory), client: 192.168.65.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/07 14:12:20 [error] 184#184: *2 open() "/var/www/html/api" failed (2: No such file or directory), client: 192.168.65.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/07 17:22:53 [error] 183#183: *2 open() "/var/www/html/api" failed (2: No such file or directory), client: 192.168.65.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/07 17:22:55 [error] 183#183: *2 open() "/var/www/html/api" failed (2: No such file or directory), client: 192.168.65.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
