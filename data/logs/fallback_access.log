@@ -4,3 +4,5 @@
 [07/Jul/2024:14:12:20 +0000] 404 - GET http localhost "/api" [Client 192.168.65.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
 [07/Jul/2024:17:22:53 +0000] 404 - GET http localhost "/api" [Client 192.168.65.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
 [07/Jul/2024:17:22:55 +0000] 404 - GET http localhost "/api" [Client 192.168.65.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
+[07/Jul/2024:18:13:12 +0000] 200 - GET http localhost "/" [Client 192.168.65.1] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
+[07/Jul/2024:18:13:22 +0000] 404 - GET http localhost "/api" [Client 192.168.65.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
