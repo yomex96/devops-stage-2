@@ -1,79 +1,30 @@
-# # frontend/Dockerfile
+# Use an official Node.js runtime as a parent image
+FROM node:20.15.0-alpine
 
-# # Stage 1: Build React application
-# FROM node:16-alpine as build
-
-# WORKDIR /app
-
-# COPY package.json package-lock.json ./
-# RUN npm install
-
-# COPY . .
-# RUN npm run build
-
-# # Stage 2: Serve the built React app with Traefik labels
-# FROM scratch
-
-# # Copy built React app from the build stage
-# COPY --from=build /app/build /app/build
-
-# # Traefik labels for routing
-# # LABEL "traefik.http.routers.my-frontend.rule"="Host(`your-domain.com`)"  # Replace with your domain
-# # LABEL "traefik.http.services.my-frontend.loadbalancer.server.port"="80"
-# LABEL "traefik.http.routers.my-frontend.rule"="Host(`your-domain.com`) && PathPrefix(`/`)"
-# LABEL "traefik.http.services.my-frontend.loadbalancer.server.port"="80"
-
-
-# # frontend/Dockerfile -a
-# FROM node:16-alpine as build
-
-# WORKDIR /app
-
-# # Install git
-# RUN apk add --no-cache git
-
-# COPY package.json package-lock.json ./
-# RUN npm install
-
-# COPY . .
-# RUN npm run build
-
-# # Debugging step: List the contents of the build directory to ensure it exists
-# RUN ls -al /app/dist
-
-# FROM nginx:alpine
-# COPY --from=build /app/dist /usr/share/nginx/html
-# EXPOSE 80
-
-# CMD ["nginx", "-g", "daemon off;"]
-
-
-FROM node:16 AS build
-
-# Set the working directory
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json to the working directory
-COPY package*.json ./
+# Copy the package.json and package-lock.json files
+#COPY package*.json ./
 
 # Install dependencies
+#RUN npm install
+
+# Copy the rest of the application code
+COPY . /app
 RUN npm install
+# Build the Vite app
+#RUN npm run build
 
-# Copy the rest of the application code to the working directory
-COPY . .
+# Check if the build directory exists
+#RUN ls -al /app/dist
 
-# Build the application
-RUN npm run build
+# Install serve globally
+#RUN npm install -g serve
 
-# Use the official Nginx image for serving the frontend
-FROM nginx:alpine
+# Make port 5173 available to the world outside this container
+EXPOSE 5173
 
-# Copy the build output to the Nginx HTML directory
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
-
+# Serve the application
+#CMD ["serve", "-s", "dist"]
+CMD [ "npm", "run", "dev", "--", "--host" ]
