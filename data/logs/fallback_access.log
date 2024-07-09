@@ -274,3 +274,7 @@
 [09/Jul/2024:09:29:34 +0000] 405 - POST http 3.95.252.39 "/" [Client 135.125.246.110] [Length 556] [Gzip -] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "-"
 [09/Jul/2024:09:43:17 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 64.62.197.132] [Length 154] [Gzip -] "-" "-"
 [09/Jul/2024:10:20:10 +0000] 404 - GET http 3.95.252.39 "/.env" [Client 185.254.196.173] [Length 183] [Gzip 3.21] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "-"
+[09/Jul/2024:17:53:02 +0000] 200 - GET http localhost "/" [Client 192.168.65.1] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
+[09/Jul/2024:18:08:35 +0000] 200 - GET http localhost "/" [Client 192.168.65.1] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
+[09/Jul/2024:18:10:51 +0000] 400 - GET http localhost "/" [Client 192.168.65.1] [Length 654] [Gzip -] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
+[09/Jul/2024:18:10:51 +0000] 400 - GET http localhost "/favicon.ico" [Client 192.168.65.1] [Length 654] [Gzip -] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "http://localhost:443/"

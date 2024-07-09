@@ -170,3 +170,10 @@
 2024/07/09 08:02:41 [error] 481#481: *10954 open() "/var/www/html/.env" failed (2: No such file or directory), client: 135.125.246.110, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "3.95.252.39"
 2024/07/09 09:29:34 [error] 487#487: *11583 open() "/var/www/html/.env" failed (2: No such file or directory), client: 135.125.246.110, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "3.95.252.39"
 2024/07/09 10:20:10 [error] 487#487: *12067 open() "/var/www/html/.env" failed (2: No such file or directory), client: 185.254.196.173, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "3.95.252.39"
+2024/07/09 17:53:10 [alert] 187#187: 512 worker_connections are not enough
+2024/07/09 17:53:11 [error] 187#187: *662 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost:81/"
+2024/07/09 18:08:36 [alert] 187#187: 512 worker_connections are not enough
+2024/07/09 18:08:36 [error] 187#187: *522 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost:81/"
+2024/07/09 18:28:40 [warn] 187#187: 512 worker_connections are not enough, reusing connections
+2024/07/09 18:28:40 [alert] 187#187: 512 worker_connections are not enough
+2024/07/09 18:28:40 [error] 187#187: *1076 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost:81/"
